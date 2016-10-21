@@ -18,21 +18,21 @@ import java.util.logging.Logger;
 import static examples.bakery.BakeryAppStarter.localID;
 
 /**
- * @author sai
+ * @author sai popo
  */
 public
 class Control
         extends javax.swing.JFrame {
 
     private boolean firstStart = true;
-    private MessageFactory mf;
-    private BakeryNode node;
+    private MessageFactory        mf;
+    private BakeryNode            node;
     private SimpleDataRingHandler receiveHandler;
-    private UDPComSocket receiveSocket;
-    private RemoteRequester rr;
+    private UDPComSocket          receiveSocket;
+    private RemoteRequester       rr;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton startButton;
-    private javax.swing.JButton stopButton;
+    private javax.swing.JButton   startButton;
+    private javax.swing.JButton   stopButton;
 
     /**
      * Creates new form Control
@@ -90,17 +90,17 @@ class Control
         layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(layout.createSequentialGroup()
                                                         .addContainerGap()
-                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                                        .addComponent(startButton,
-                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                109,
-                                                                                javax.swing.GroupLayout.PREFERRED_SIZE
-                                                                        )
-                                                                        .addComponent(stopButton,
-                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                109,
-                                                                                javax.swing.GroupLayout.PREFERRED_SIZE
-                                                                        ))
+                                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(
+                                                                startButton,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                109,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE
+                                                        ).addComponent(
+                                                                stopButton,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                109,
+                                                                javax.swing.GroupLayout.PREFERRED_SIZE
+                                                        ))
                                                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
         layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                       .addGroup(layout.createSequentialGroup()
@@ -111,7 +111,8 @@ class Control
                                                               javax.swing.GroupLayout.PREFERRED_SIZE
                                                       )
                                                       .addGap(18, 18, 18)
-                                                      .addComponent(stopButton,
+                                                      .addComponent(
+                                                              stopButton,
                                                               javax.swing.GroupLayout.PREFERRED_SIZE,
                                                               59,
                                                               javax.swing.GroupLayout.PREFERRED_SIZE

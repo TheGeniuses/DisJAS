@@ -26,9 +26,9 @@ class RemoteRequester {
     public static final int RECEIVE_TIMEOUT     = -32003;
     public static final int SEND_TIMEOUT        = -32002;
     protected ComSocket remoteClient;
-    private boolean          connected = false;
-    private int                    id;
-    private JSONRPC2Response response  = null;
+    private boolean connected = false;
+    private int id;
+    private JSONRPC2Response response = null;
     private RequestHandlerRunnable rh;
 
 
@@ -67,9 +67,9 @@ class RemoteRequester {
 
     public synchronized
     JSONRPC2Response sendRequest(JSONRPC2Request req) {
-        boolean          reqSent = false;
+        boolean reqSent = false;
         JSONRPC2Response reqResponse;
-        int              error   = 0;
+        int error       = 0;
         if (!connected) {
             error = RemoteRequester.DISCONNECTED;
             JSONRPC2Error reqError = new JSONRPC2Error(error, "RemoteRequester#sendRequest: disconnected from server " + remoteClient + '\n');
@@ -87,8 +87,7 @@ class RemoteRequester {
             Logger.getLogger(RemoteRequester.class.getName()).log(Level.SEVERE, "RemoteRequester#sendRequest: error on write\n", ex);
         }
         if (!reqSent) {
-            JSONRPC2Error reqError = new JSONRPC2Error(
-                    error,
+            JSONRPC2Error reqError = new JSONRPC2Error(error,
                     "RemoteRequester#sendRequest: an error ocurred while sending the request to " + remoteClient + '\n'
             );
             return new JSONRPC2Response(reqError, req.getID());

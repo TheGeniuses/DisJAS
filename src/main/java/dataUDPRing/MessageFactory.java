@@ -16,12 +16,12 @@ import java.util.Map;
 public
 class MessageFactory
         extends ARequestFactory {
-    public static final String CONNECT = "ring.connect";
+    public static final String CONNECT    = "ring.connect";
     public static final String DISCONNECT = "ring.disconnect";
-    public static final String MESSAGE = "ring.msg";
-    public static final String RECONNECT = "ring.reconnect";
-    public static final String START = "ring.start";
-    public static final String STOP = "ring.stop";
+    public static final String MESSAGE    = "ring.msg";
+    public static final String RECONNECT  = "ring.reconnect";
+    public static final String START      = "ring.start";
+    public static final String STOP       = "ring.stop";
 
 
     public

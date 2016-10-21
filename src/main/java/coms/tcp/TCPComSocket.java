@@ -9,6 +9,7 @@ import com.thetransactioncompany.jsonrpc2.JSONRPC2Request;
 import com.thetransactioncompany.jsonrpc2.JSONRPC2Response;
 import coms.AsyncReadTrigger;
 import coms.ComSocket;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

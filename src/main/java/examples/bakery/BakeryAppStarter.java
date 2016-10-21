@@ -13,17 +13,15 @@ import rmi.RemoteRequester;
 
 import java.io.IOException;
 import java.net.InetAddress;
-import java.net.SocketException;
-import java.net.UnknownHostException;
 
 /**
  * @author sai
  */
 public
 class BakeryAppStarter {
-    public static final int BASE_LISTEN_PORT = 4000;
-    public static final int BASE_SEND_PORT   = 5000;
-    public static final boolean showComs = false;
+    public static final int     BASE_LISTEN_PORT = 4000;
+    public static final int     BASE_SEND_PORT   = 5000;
+    public static final boolean showComs         = false;
     public static Integer localID;
 
     /**

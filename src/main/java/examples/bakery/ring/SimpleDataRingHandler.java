@@ -22,7 +22,7 @@ public
 class SimpleDataRingHandler
         extends Handler {
 
-    protected UDPComSocket next;
+    protected UDPComSocket          next;
     protected SimpleDataRingHandler sendHandler;
     protected boolean stopped = false;
 

@@ -25,10 +25,10 @@ import java.util.logging.Logger;
 public
 class UDPComSocket
         extends ComSocket {
-    protected InetAddress    laddr;
-    protected boolean        listening;
-    protected Integer lport;
-    protected int            maxLenght;
+    protected InetAddress laddr;
+    protected boolean     listening;
+    protected Integer     lport;
+    protected int         maxLenght;
     protected InetAddress raddr = null;
     protected Integer     rport = null;
     protected DatagramSocket socket;

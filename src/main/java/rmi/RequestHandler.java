@@ -21,19 +21,19 @@ import java.util.logging.Logger;
 public abstract
 class RequestHandler {
     //errors
-    public static final int     CANNOT_SEND_REQUEST    = -32001;
-    public static final int     DISCONNECTED           = -32005;
-    public static final int     ERROR_ON_RECEIVE       = -32004;
-    public static final int     RECEIVE_TIMEOUT        = -32003;
-    public static final int     SEND_TIMEOUT           = -32002;
-    public static final int     UNIMPLEMENTED_REQUEST  = -32006;
+    public static final int CANNOT_SEND_REQUEST   = -32001;
+    public static final int DISCONNECTED          = -32005;
+    public static final int ERROR_ON_RECEIVE      = -32004;
+    public static final int RECEIVE_TIMEOUT       = -32003;
+    public static final int SEND_TIMEOUT          = -32002;
+    public static final int UNIMPLEMENTED_REQUEST = -32006;
     protected JSONRPC2Request  req;
     protected JSONRPC2Response resp;
     protected RemoteRequester  rr;
-    protected           boolean running                = true;
-    protected ComSocket        socket;
-    private             boolean gotResponse            = false;
-    private             boolean waitForResponseAndStop = false;
+    protected boolean running = true;
+    protected ComSocket socket;
+    private boolean gotResponse            = false;
+    private boolean waitForResponseAndStop = false;
 
     protected
     RequestHandler(ComSocket s) {
