@@ -21,7 +21,7 @@ public
 class BakeryAppStarter {
     public static final int     BASE_LISTEN_PORT = 4000;
     public static final int     BASE_SEND_PORT   = 5000;
-    public static final boolean showComs         = false;
+    public static final boolean showComs         = true;
     public static Integer localID;
 
     /**
