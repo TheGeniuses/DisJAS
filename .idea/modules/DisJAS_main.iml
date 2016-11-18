@@ -21,7 +21,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/json-smart-1.1.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/jsonrpc2-base-1.35-javadoc.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -30,7 +30,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../libs/jsonrpc2-base-1.35-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../libs/json-smart-1.1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
